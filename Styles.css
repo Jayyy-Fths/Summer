@@ -55,7 +55,7 @@ header nav {
 }
 
 header .highlight, header .current a {
-    color: #5fcc21;
+    color: #0a0f07;
     font-weight: bold;
 }
 
@@ -64,7 +64,6 @@ header a:hover {
     font-weight: bold;
 }
 
-/* Showcase */
 #showcase {
     min-height: 400px;
     text-align: center;
@@ -81,13 +80,11 @@ header a:hover {
     font-size: 20px;
 }
 
-/* Main Content Area */
 #main {
     padding: 30px 0;
     background: #2d6d49;
 }
 
-/* Footer */
 footer {
     padding: 20px;
     margin-top: 20px;

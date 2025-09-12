@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Summer of '25</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <style>
+        .gallery-section {
+            padding: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        div.gallery {
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">My Summer of '25</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li class="current"><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            <div class="gallery">
+                <a target="_blank" href="images/Back Left.png">
+                    <img src="images/Back Left.png" alt="Back Left View" />
+                </a>
+                <div class="desc">A scenic back left view from the summer adventures.</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/chill guy.png">
+                    <img src="images/chill guy.png" alt="Chill Guy" />
+                </a>
+                <div class="desc">Relaxing moments with the chill guy during summer.</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/TREADWELL1.png">
+                    <img src="images/TREADWELL1.png" alt="Treadwell Scene 1" />
+                </a>
+                <div class="desc">First view from Treadwell, capturing the essence of summer exploration.</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/TREADWELL2.png">
+                    <img src="images/TREADWELL2.png" alt="Treadwell Scene 2" />
+                </a>
+                <div class="desc">Second scenic shot from Treadwell, highlighting natural beauty.</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/F100-01.png">
+                    <img src="images/F100-01.png" alt="F100 Image 1" />
+                </a>
+                <div class="desc">Captured with F100, a memorable moment from the summer.</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/F100-02.png">
+                    <img src="images/F100-02.png" alt="F100 Image 2" />
+                </a>
+                <div class="desc">Another F100 shot, showcasing the vibrant summer scenes.</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/Screenshot 2025-09-09 095429.png">
+                    <img src="images/Screenshot 2025-09-09 095429.png" alt="Screenshot from September 9, 2025" />
+                </a>
+                <div class="desc">A screenshot capturing a special moment in summer 2025.</div>

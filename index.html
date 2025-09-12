@@ -4,108 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Summer of 25'</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div id="branding">
-                <h1><span class="highlight">Whispers</span> & Perspectives</h1>
+                <h1><class="highlight"> My Summer of '25 </h1>
             </div>
             <nav>
                 <ul>
                     <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
-            <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
-                </label>
+            
+              
             </div>
         </div>
     </header>
 
     <section id="showcase">
         <div class="container">
-            <h1>Anonymous Thoughts Unveiled</h1>
-            <p>Explore the depths of unfiltered perspectives</p>
+            <h1>Jayden N. Baird Azore</h1>
+            <p>The Summer of 2025</p>
         </div>
     </section>
 
     <section id="main">
         <div class="container">
-            <h2>Latest Posts</h2>
+            <h2>What I Did</h2>
             <div id="blog-posts">
-                <!-- Blog posts will be dynamically inserted here -->
+                <article class="post">
+                    <h3>Exploring the Mountains</h3>
+                    <p>Posted on July 10, 2025</p>
+                    <p>This summer, I had the chance to explore some breathtaking mountain ranges. The fresh air and stunning views were unforgettable!</p>
+                </article>
+                <article class="post">
+                    <h3>Beach Adventures</h3>
+                    <p>Posted on August 5, 2025</p>
+                    <p>Spending time at the beach was a highlight of my summer. From surfing to building sandcastles, every moment was filled with joy.</p>
+                </article>
+                <article class="post">
+                    <h3>City Escapades</h3>
+                    <p>Posted on August 20, 2025</p>
+                    <p>Visiting the city brought a different kind of excitement. The vibrant culture, delicious food, and lively atmosphere made it an unforgettable experience.</p>
+                </article>
+
             </div>
         </div>
     </section>
 
     <footer>
-        <p>Whispers & Perspectives Anonymous Blog, &copy; 2025</p>
+        <p>Jayden N. Baird Azore Summer and what he did &copy; 2025</p>
     </footer>
 
-    <script>
-        // Sample blog post data
-        const blogPosts = [
-            {
-                title: "The Unseen Struggles of Modern Society",
-                content: "In today's fast-paced world, we often overlook...",
-                date: "January 3, 2025"
-            },
-            {
-                title: "Reflections on Digital Privacy",
-                content: "As we navigate the digital landscape, our personal data...",
-                date: "January 2, 2025"
-            },
-            {
-                title: "The Art of Anonymous Expression",
-                content: "There's a unique power in sharing thoughts without...",
-                date: "January 1, 2025"
-            }
-        ];
-
-        // Function to display blog posts
-        function displayBlogPosts() {
-            const blogPostsContainer = document.getElementById('blog-posts');
-            blogPosts.forEach(post => {
-                const postElement = document.createElement('div');
-                postElement.innerHTML = `
-                    <h3>${post.title}</h3>
-                    <p>${post.content}</p>
-                    <small>${post.date}</small>
-                    <hr>
-                `;
-                blogPostsContainer.appendChild(postElement);
-            });
-        }
-
-        // Call the function when the page loads
-        window.onload = displayBlogPosts;
-
-        // Dark mode toggle
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.body.classList.add('dark-mode');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.body.classList.remove('dark-mode');
-                localStorage.setItem('theme', 'light');
-            }    
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
-
-        const currentTheme = localStorage.getItem('theme');
-        if (currentTheme) {
-            document.body.classList[currentTheme === 'dark' ? 'add' : 'remove']('dark-mode');
-            toggleSwitch.checked = currentTheme === 'dark';
-        }
-    </script>
+    
 </body>
 </html>
